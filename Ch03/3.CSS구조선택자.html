@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS구조선택자</title>
+  <!--
+    날짜 : 24/01/23
+    이름 : 최이진
+    내용 : CSS구조선택자 실습
+  -->
+  <style>
+    /*구조 선택자*/
+    .city > li:first-child { color: red;}
+    .city > li:nth-child(2){ color: orange;}
+    .city > li:nth-child(4){ color: green}
+    .city > em:nth-child(6){ color: blue;}
+    .city > em:nth-of-type(2){ color: purple;}
+    .city > em:last-child { color: gold;}
+
+    ul:nth-child(3) > li:first-child { color: red}
+    ul:nth-of-type(2) > li:nth-child(2){ color: blue}
+    ul:nth-child(3) > li:nth-child(3){color: green;}
+    ul:last-of-type > li:nth-child(4){color: plum}
+
+  </style>
+</head>
+<body>
+  <h3>구조선택자</h3>
+
+  <ul class="city">
+    <li>서울</li>
+    <li>대전</li>
+    <li>대구</li>
+    <li>부산</li>
+    <li>광주</li>
+    <em>인천</em>
+    <em>울산</em>
+    <em>세종</em>  
+  </ul>
+  <ul>
+    <li>한국</li>
+    <li>미국</li>
+    <li>영국</li>
+    <li>중국</li>
+    <li>일본</li>
+  </ul> 
+</body>
+</html>
