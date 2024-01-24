@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>가시속성</title>
+  <!--
+    날짜 : 24/01/24
+    이름 : 최이진
+    내용 : CSS 가시속성 실습
+  -->
+  <style>
+    span { background: orange; }
+    div > div { background: green;}
+
+    .box1 > span:nth-child(1) { display: none; }
+    .box1 > span:nth-child(2) { visibility: hidden; }
+    .box1 > span:nth-child(3) { opacity: 0.3; }
+
+    .box2 > span:nth-child(2) { display: block; }
+
+    .box3 > div { 
+      display: inline; 
+      width: 100px;
+      height: 100px;
+    }
+
+    .box4 > div { 
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+     }
+
+  </style>
+</head>
+<body>
+  <h3>가시속성</h3>
+
+  <h4>display:none</h4>
+  <div class="box1">
+    <span>SPAN1</span>
+    <span>SPAN2</span>
+    <span>SPAN3</span>
+  </div>
+
+
+  <h4>display:block</h4>
+  <div class="box2">
+    <span>SPAN1</span>
+    <span>SPAN2</span>
+    <span>SPAN3</span>
+  </div>
+
+
+  <h4>display:inline</h4>
+  <div class="box3">
+    <span>SPAN1</span>
+    <div>DIV2</div>
+    <span>SPAN3</span>
+  </div>
+
+
+  <h4>display:inline-block</h4>
+  <div class="box4">
+    <span>SPAN1</span>
+    <div>DIV2</div>
+    <span>SPAN3</span>
+  </div>
+</body>
+</html>
