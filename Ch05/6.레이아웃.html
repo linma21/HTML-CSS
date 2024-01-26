@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>레이아웃6</title>
+  <style>
+    * {
+     margin: 0;
+     padding: 0; 
+    }
+    ul, ol {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      color: #111;
+    }
+    #container {
+      width: 860px;
+      height: auto;
+      background:  #fff;
+      border: 1px solid black;
+      padding: 10px;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+
+    header {
+      width: 100%;
+      height: 120px;
+      padding: 10px;
+      background: #eee;
+      border: 1px dashed black;
+      box-sizing: border-box;
+    }
+    main   {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      background: #eee;
+      border: 1px dashed black;
+      box-sizing: border-box;
+      margin: 10px 0;
+      overflow: hidden;
+    }
+    main > p {
+      margin-bottom: 10px;
+    }
+    footer {
+      width: 100%;
+      height: 100px;
+      background: #eee;
+      padding: 10px;
+      border: 1px dashed black;
+      box-sizing: border-box;
+    }
+
+    aside {
+      float: left;
+      width: 216px;
+      height: 400px;
+      background-color: #ddd;
+      padding: 10px;
+      border: 1px dashed black;
+    }
+    section{
+      float: left;
+      width: 530px;
+      height: 400px;
+      background: #ddd;
+      padding: 10px;
+      border: 1px dashed black;
+      margin-left: 10px;
+    }
+    article {
+      width: auto;
+      height: 163px;
+      background-color: #ccc;
+      border: 1px dashed black;
+      padding: 10px;
+      margin-bottom: 10px;
+
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <header>header</header>
+    <main>
+      <p>main</p>
+      <aside>aside</aside>
+      <section>
+        section
+        <article>article #1</article>
+        <article>article #2</article>
+      </section>
+    </main>
+    <footer>footer</footer>
+  </div>
+</body>
+</html>
