@@ -251,7 +251,7 @@ main > section {
 }
 #sub > section > article {
   float: left;
-  width: 802px;
+  width: 800px;
   min-height: 650px;
   padding-left: 40px;
   box-sizing: border-box;
