@@ -10,8 +10,6 @@
 
 | sub5. 웹 표준
 
-| sub6. HTML/CSS 학습 순서
-
 ### **Ch02 HTML 태그**  
 | sub1. HTML 개요
 
@@ -63,4 +61,15 @@
 | sub5. 콘텐츠 영역
 
 | sub6. 푸터 영역
+### **Ch06 부트스트랩**  
+| sub1. UI Framework
 
+| sub2. Bootstrap
+
+| sub3. Container
+
+| sub4. Utilities
+
+| sub5. Components
+
+| sub6. Grid
